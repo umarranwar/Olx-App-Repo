@@ -56,7 +56,7 @@ const Add = ({onPost}) => {
     }
   };
   const openCamera = async () => {
-    const result = await launchCamera({mediaType: 'photo'});
+    const result = await launchImageLibrary({mediaType: 'photo'});
     if (!result.didCancel) {
       setPhoto(result);
     }
